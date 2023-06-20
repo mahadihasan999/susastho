@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600&family=Noto+Sans+Bengali:wght@200;300;400;500;600&family=Tiro+Bangla&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Hind Siliguri', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.primary-color{
+  color: #004aad
+}
+.background-color{
+  color: #004aad
+}
