@@ -20,7 +20,7 @@ export default function Navbar() {
   const [show, setShow] = useState(null);
   const [profile, setProfile] = useState(false);
   const [product, setProduct] = useState(false);
-  const [About, setDeliverables] = useState(false);
+  const [about, setDeliverables] = useState(false);
   const { user, signOutUser } = useAuth();
   return (
     <>
@@ -73,7 +73,7 @@ export default function Navbar() {
                         <span className="ml-2 font-bold">সকল রোগ</span>
                       </Link>
                       <Link
-                        to="/about"
+                        to="/health-tools"
                         className="border-b border-gray-300 flex xl:hidden cursor-pointer text-gray-600 text-sm leading-3 tracking-normal pt-2 pb-4 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none"
                       >
                         <svg
@@ -93,7 +93,7 @@ export default function Navbar() {
                           <polyline points="17 8 21 12 17 16" />
                           <line x1={14} y1={4} x2={10} y2={20} />
                         </svg>
-                        <span className="ml-2 font-bold">About</span>
+                        <span className="ml-2 font-bold">স্বাস্থ্য টূলস</span>
                       </Link>
                       <Link className="cursor-pointer text-gray-600 text-sm leading-3 tracking-normal mt-2 py-2 hover:text-blue-700 flex items-center focus:text-blue-700 focus:outline-none">
                         <div className="flex items-center">
@@ -273,7 +273,7 @@ export default function Navbar() {
                     </Link>
                   ) : (
                     <Link
-                      to="/about"
+                      to="/health-tools"
                       className="flex px-5 items-center py-6 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none transition duration-150 ease-in-out"
                     >
                       <span className="mr-2">
@@ -295,7 +295,7 @@ export default function Navbar() {
                           <line x1={14} y1={4} x2={10} y2={20} />
                         </svg>
                       </span>
-                      About
+                      স্বাস্থ্য টুলস
                     </Link>
                   )}
                 </div>
@@ -376,7 +376,7 @@ export default function Navbar() {
             }
           >
             <div
-              className="bg-gray-800 opacity-50 w-full h-full"
+              className="bg-gray-800 opacity-50 w-full"
               onClick={() => setShow(!show)}
             />
             <div className="w-64 z-40 0 overflow-y-auto z-40 top-0 bg-white shadow h-full flex-col justify-between xl:hidden pb-4 transition duration-150 ease-in-out">
@@ -407,13 +407,13 @@ export default function Navbar() {
                         <div className="flex items-center ">
                           <AiOutlineHome className="w-6 h-6 md:w-8 md:h-8 text-gray-700" />
                           <p className=" xl:text-base md:text-2xl text-base ml-3 ">
-                            Home
+                            প্রথম
                           </p>
                         </div>
                       </Link>
 
                       <Link
-                        to="/all-diaseas"
+                        to="/all-disease"
                         onClick={() => setShow(!show)}
                         className="text-gray-800 pt-8 focus:font-bold hover:font-bold"
                       >
@@ -429,7 +429,7 @@ export default function Navbar() {
                       </Link>
 
                       <Link
-                        to="/about"
+                        to="/health-tools"
                         onClick={() => setShow(!show)}
                         className="text-gray-800 pt-8  focus:font-bold hover:font-bold"
                       >
@@ -453,7 +453,7 @@ export default function Navbar() {
                               </svg>
                             </div>
                             <p className="text-gray-800 xl:text-base md:text-2xl text-base ml-3">
-                              About
+                              স্বাস্থ্য টূলস
                             </p>
                           </div>
                         </div>

@@ -15,7 +15,7 @@ const Stat = () => {
           সকল সেবা
         </h1>
         <h1 className="leading-4 font-extrabold uppercase text-3xl lg:text-5xl text-gray-700 reletive md:mb-8 lg:mb-0 ">
-          স্বাস্থ্য<span className="primary-color"> টুলস</span>
+          স্বাস্থ্য<span className="primary-color">টুলস</span>
         </h1>
       </div>
       <div className="my-12 grid grid-cols-3 gap-5">
@@ -44,7 +44,7 @@ const Stat = () => {
               className="text-white text-4xl"
             />
           </div>
-          <div className="p-4">
+          {/* <div className="p-4">
             <h2 className="text-xl font-bold mb-2">Stress Management</h2>
             <p className="text-gray-700">মানসিক চাপ কমানোর সহজ উপায়</p>
             <Link
@@ -53,7 +53,7 @@ const Stat = () => {
             >
               দেখুন
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="max-w-md mx-auto bg-white rounded-md shadow-md overflow-hidden hover:shadow-lg">

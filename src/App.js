@@ -33,6 +33,7 @@ import StressManagementTools from "./components/tools/stressManagement";
 import TermsAndCondition from "./common/Footer/TermsAndCondition";
 import Disclamer from "./common/Footer/Disclaimer";
 import Alldiaseas from "./components/diaseas/Alldiaseas";
+import Stat from "./components/stat/Stat";
 
 function App() {
   const [changeHeader, setChangeHeader] = useState(false);
@@ -101,6 +102,7 @@ function App() {
             <Route path="/manage-blogs" element={<AddBlogs />} />
             <Route exact path="/search/:id" element={<Allproduct />} />
             <Route exact path="/bmi-tools" element={<BmiCalclutor />} />
+            <Route exact path="/health-tools" element={<Stat />} />
             <Route
               exact
               path="/calorie-calculator"

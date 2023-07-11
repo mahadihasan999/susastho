@@ -25,8 +25,7 @@ const SideNav = () => {
   const admin_menu = [
     // { id: 1, text: 'Dashboard', to: "/dashboard },
 
-    { id: 1, text: "Properties", to: "manage-properties" },
-    { id: 2, text: "Blogs", to: "manage-blogs" },
+    { id: 1, text: "Blogs", to: "manage-blogs" },
   ];
 
   return (

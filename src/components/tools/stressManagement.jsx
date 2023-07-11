@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Draginfo from "./Draginfo";
 
 const StressManagementTools = () => {
   const [stressLevel, setStressLevel] = useState("");
@@ -39,6 +40,7 @@ const StressManagementTools = () => {
 
   return (
     <div className="container mx-auto p-4">
+      <Draginfo />
       <h1 className="text-2xl font-bold mb-4">Stress Management Tools</h1>
       <div className="mb-4">
         <label className="block mb-2" htmlFor="stressLevel">

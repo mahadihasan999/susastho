@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import useBMI from "../../hooks/useBMI";
 
 const BmiCalclutor = () => {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
-
+  const { data } = useBMI();
+  console.log(data);
   const [bmiResult, setBmiResult] = useState("");
 
   const [status, setStatus] = useState("");
@@ -25,6 +27,10 @@ const BmiCalclutor = () => {
     else if (bmi >= 25 && bmi < 30) return "Overweight";
     else return "obese";
   }
+
+  //useEffect for loading json file
+
+  const main = data?.filter((data) => "Overweight" === data.role);
 
   return (
     <div className="BmiCalclutor container mx-auto p-4 items-center">
@@ -76,6 +82,18 @@ const BmiCalclutor = () => {
             </div>
           )}
         </form>
+      </div>
+
+      <div className="flex items-center text-start py-5 px-2 b">
+        {main?.map((data) => (
+          <div>
+            <h1 className="text-2xl font-semibold text-center text-gray-800 pb-2">
+              {data?.title}
+            </h1>
+
+            <div className="text-xl">{data.description}</div>
+          </div>
+        ))}
       </div>
     </div>
   );
